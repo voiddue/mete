@@ -45,4 +45,5 @@ end
 
 group :production do
   gem 'SyslogLogger'
+  gem 'activerecord-postgresql-adapter'
 end
