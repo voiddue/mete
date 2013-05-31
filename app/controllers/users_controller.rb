@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     if Drink.count > 0
-      @drinks = Drink.order("donationRecommendation DESC").all
+      @drinks = Drink.order("donation_recommendation DESC").all
     end
 
     respond_to do |format|

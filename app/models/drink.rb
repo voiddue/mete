@@ -1,3 +1,3 @@
 class Drink < ActiveRecord::Base
-  attr_accessible :bottleSize, :caffeine, :donationRecommendation, :logoUrl, :name
+  attr_accessible :bottle_size, :caffeine, :donation_recommendation, :logo_url, :name
 end

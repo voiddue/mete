@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313210611) do
+ActiveRecord::Schema.define(:version => 20130531212526) do
 
   create_table "audits", :force => true do |t|
     t.integer  "difference_cents"
@@ -20,12 +20,12 @@ ActiveRecord::Schema.define(:version => 20130313210611) do
 
   create_table "drinks", :force => true do |t|
     t.string   "name"
-    t.string   "bottleSize"
+    t.string   "bottle_size"
     t.string   "caffeine"
-    t.decimal  "donationRecommendation"
-    t.string   "logoUrl"
-    t.datetime "created_at",             :null => false
-    t.datetime "updated_at",             :null => false
+    t.decimal  "donation_recommendation"
+    t.string   "logo_url"
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
   end
 
   create_table "users", :force => true do |t|
