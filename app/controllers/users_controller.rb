@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     @user = User.find(params[:id])
-    unless Drink.count.blank?
+    if Drink.count > 0
       @drinks = Drink.order("donationRecommendation DESC").all
     end
 
